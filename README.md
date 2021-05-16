@@ -6,7 +6,7 @@ A collection of different regression models for predicting Brain Age from T1 wei
 University of Manitoba, Winnipeg, MB, Canada   
 **M. Tanveer**: Department of Mathematics, Indian Institute of Technology Indore, India  
 **Imran Razzak**: School of Information Technology, Deakin University, Geelong, Australia   
-**M.A. Ganaie**: Department of Mathematics, Indian Institute of Technology Indore, India   
+**M.A. Ganaie**: Post-Doctoral Student, Department of Mathematics, Indian Institute of Technology Indore, India   
 **Aryan Rastogi**: Undergraduate Student, Department of Electrical Engineering, Indian Institute of Technology Indore, India  
 **Vardhan Paliwal**: Undergraduate Student, Department of Electrical Engineering, Indian Institute of Technology Indore, India  
 
