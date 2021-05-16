@@ -1,0 +1,267 @@
+clc;
+clear all;
+close all;
+%precision = 10^(-5);
+% ep1 = 0.01;
+% ep2 = 0.01;
+no_part = 10.;
+train_size = 200;
+test_size = 1000;
+% x = rand(train_size,1);
+% p = rand(test_size,1);
+% noise = (-0.2 + 0.4 * rand(train_size,1) );
+% R = normrnd(mu,sigma,m,n);
+%  noise = normrnd(0,0.2^2,train_size,1);
+for load_file = 11:11
+    %% initializing variables case level and loading file
+    switch load_file
+        case 1
+           file = 'func1';
+                  x = rand(train_size,1);
+                  p = rand(test_size,1);
+                  noise = normrnd(0,0.2,train_size,1);      
+                  x3 = x*8*pi-4*pi;
+                  y3 = sin(x3)./x3;
+                  y3 = y3 + noise;
+                  a3 = [x3,y3];
+                  save func1train.txt a3 -ASCII;                  
+                  p3 = p*8*pi - 4*pi;
+                  q3 = sin(p3)./p3;
+                  b3 = [p3,q3];
+                  save func1test.txt b3 -ASCII;
+				  b8 = [a3;b3];
+				  save func1.txt b8 -ASCII;
+                  b9 = [y3;q3];
+                  save funAct1.txt b9 -ASCII;
+                  
+        case 2
+            file = 'func2';
+                  x = rand(train_size,1);
+                  p = rand(test_size,1);
+                  noise = normrnd(0,0.2,train_size,1);       
+                  x2 = x*20-10;
+                  y2 = (4./( abs(x2)+2 )) + cos(2.*x2);
+                  y2 = y2 + noise;                  
+                  a2 = [x2,y2];
+                  save func2train.txt a2 -ASCII;
+                  p2 = p*20 - 10;
+                  q2 = (4./( abs(p2)+2 )) + cos(2.*p2);
+                  b2 = [p2,q2];
+                  save func2test.txt b2 -ASCII;
+				  b8 = [a2;b2];
+				  save func2.txt b8 -ASCII;
+                  b9 = [y2;q2];
+                  save funAct2.txt b9 -ASCII;
+                  
+        case 3
+           file = 'func3';
+                  x = rand(train_size,1);
+                  p = rand(test_size,1);
+                  noise = normrnd(0,0.2,train_size,1);      
+                  x1 = x*20-10;
+                  y1 = (4./( abs(x1)+2 )) + cos(2.*x1)+ sin(3.*x1);
+                  y1 = y1 + noise;
+                  a1 = [x1,y1];
+                  save func3train.txt a1 -ASCII;
+                  p1 = p*20 - 10;
+                  q1 = (4./( abs(p1)+2 )) + cos(2.*p1)+ sin(3.*p1);
+                  b1 = [p1,q1];
+                  save func3test.txt b1 -ASCII;
+				  b8 = [a1;b1];
+				  save func3.txt b8 -ASCII;
+                  b9 = [y1;q1];
+                  save funAct3.txt b9 -ASCII;
+                  
+        case 4
+            file = 'func4';
+                  x = rand(train_size,1);
+                  p = rand(test_size,1);
+                  noise = normrnd(0,0.2,train_size,1); 
+                  x1 = x*4-2;
+                  x2 = x1;
+                  x3 = x1;
+                  x4 = x1;
+                  x5 = x1;
+                  x6=[x1,x2,x3,x4,x5];
+                  y4 = 0.79 + 1.27.*x6(:,1).*x6(:,2) + 1.56.*x6(:,1).*x6(:,4) + 3.42.*x6(:,2).*x6(:,5) + 2.06.*x6(:,3).*x6(:,4).*x6(:,5);
+                  y4 = y4 + noise;                  
+                  a4 = [x1,x2,x3,x4,x5,y4];
+                  save func4train.txt a4 -ASCII;                  
+                  p1 = p*4-2;
+                  p2 = p1;
+                  p3 = p1;
+                  p4 = p1;
+                  p5 = p1;
+                  p6=[p1,p2,p3,p4,p5];                  
+                  q4 = 0.79 + 1.27.*p6(:,1).*p6(:,2) + 1.56.*p6(:,1).*p6(:,4) + 3.42.*p6(:,2).*p6(:,5) + 2.06.*p6(:,3).*p6(:,4).*p6(:,5);                  
+                  b4 = [p1,p2,p3,p4,p5,q4];
+                  save func4test.txt b4 -ASCII;
+				  b8 = [a4;b4];
+				  save func4.txt b8 -ASCII;
+                  b9 = [y4;q4];
+                  save funAct4.txt b9 -ASCII;
+                  
+        case 5
+            file = 'func5';
+                  x = rand(train_size,1);
+                  p = rand(test_size,1);
+                  noise = normrnd(0,0.2,train_size,1);    
+                  x1 = x*4-2;
+                  x2 = x1;
+                  x7=[x1,x2];
+                  y5 = (1+sin(2.*x7(:,1)+3.*x7(:,2)))./ (3.5 + sin(x7(:,1)-x7(:,2)));
+                  y5 = y5 + noise;                  
+                  a5 = [x1,x2,y5];
+                  save func5train.txt a5 -ASCII;                  
+                  p1 = p*4-2;
+                  p2 = p1;
+                  p7=[p1,p2];
+                  q5 = (1+sin(2.*p7(:,1)+3.*p7(:,2)))./ (3.5 + sin(p7(:,1)-p7(:,2)));
+                  b5 = [p1,p2,q5];
+                  save func5test.txt b5 -ASCII;
+				  b8 = [a5;b5];
+				  save func5.txt b8 -ASCII;
+                  b9 = [y5;q5];
+                  save funAct5.txt b9 -ASCII;
+                 
+        case 6
+            file = 'func6';
+                  x = rand(train_size,1);
+                  p = rand(test_size,1);
+                  noise = normrnd(0,0.2,train_size,1);   
+                  x1 = x*1-0.5;
+                  x2 = x1;
+                  x8=[x1,x2];
+                  y6 = 1.3356*(exp(3*(x8(:,2)-0.5)).*sin(4*pi*(x8(:,2)-0.9).^2)+1.5*(1-x8(:,1))+exp(2*x8(:,1)-1).*sin(3*pi*(x8(:,1)-0.6).^2));
+                  y6 = y6 + noise;
+                  a6 = [x1,x2,y6];
+                  save func6train.txt a6 -ASCII;                  
+                  p1 = p*1 - 0.5;
+                  p2 = p1;
+                  p8=[p1,p2];
+                  q6 = 1.3356*(exp(3*(p8(:,2)-0.5)).*sin(4*pi*(p8(:,2)-0.9).^2)+1.5*(1-p8(:,1))+exp(2*p8(:,1)-1).*sin(3*pi*(p8(:,1)-0.6).^2));
+                  b6 = [p1,p2,q6];
+                  save func6test.txt b6 -ASCII;
+				  b8 = [a6;b6];
+				  save func6.txt b8 -ASCII;
+                  b9 = [y6;q6];
+                  save funAct6.txt b9 -ASCII;
+                  
+		case 7
+            file = 'func7';
+                  x = rand(train_size,1);
+                  p = rand(test_size,1);
+                 noise = normrnd(0,0.2,train_size,1); 
+                  x1 = x*2-1;
+                  x2 = x1;
+                  x9 = [x1,x2];
+                  y7 = 40*exp(8*((x9(:,1)-0.5).^2+(x9(:,2)-0.5).^2))./(exp(8*((x9(:,1)-0.2).^2+(x9(:,2)-0.7).^2))+exp(8*((x9(:,1)-0.7).^2+(x9(:,2)-0.2).^2)));
+                  y7 = y7 + noise;
+                  a7 = [x1,x2,y7];
+                  save func7train.txt a7 -ASCII;                  
+                  p1 = p*1 - 0.5;
+                  p2 = p1;
+                  p9 = [p1,p2];
+                  q7 = 40*exp(8*((p9(:,1)-0.5).^2+(p9(:,2)-0.5).^2))./(exp(8*((p9(:,1)-0.2).^2+(p9(:,2)-0.7).^2))+exp(8*((p9(:,1)-0.7).^2+(p9(:,2)-0.2).^2)));
+                  b7 = [p1,p2,q7];
+                  save func7test.txt b7 -ASCII;
+				  b8 = [a7;b7];
+				  save func7.txt b8 -ASCII;
+                  b9 = [y7;q7];
+                  save funAct7.txt b9 -ASCII;
+                  
+        case 8
+            file = 'Function2a';
+                  x = rand(train_size,1);
+                  p = rand(test_size,1);
+                  noise = (-0.2 + 0.4 * rand(train_size,1) );
+                  x1 = 0+ x*1;
+                  x2 = x1;
+                  x3 = x1;
+                  x4 = x1;
+                  x5 = x1;
+                  x6=[x1,x2,x3,x4,x5];
+                  y4 = 0.79 + 1.27.*x6(:,1).*x6(:,2) + 1.56.*x6(:,1).*x6(:,4) + 3.42.*x6(:,2).*x6(:,5) + 2.06.*x6(:,3).*x6(:,4).*x6(:,5);
+                  y4 = y4 + noise;                  
+                  a4 = [x1,x2,x3,x4,x5,y4];
+                  save Function2atrain.txt a4 -ASCII;                  
+                  p1 = 0+p*1;
+                  p2 = p1;
+                  p3 = p1;
+                  p4 = p1;
+                  p5 = p1;
+                  p6=[p1,p2,p3,p4,p5];                  
+                  q4 = 0.79 + 1.27.*p6(:,1).*p6(:,2) + 1.56.*p6(:,1).*p6(:,4) + 3.42.*p6(:,2).*p6(:,5) + 2.06.*p6(:,3).*p6(:,4).*p6(:,5);                  
+                  b4 = [p1,p2,p3,p4,p5,q4];
+                  save Function2atest.txt b4 -ASCII;
+				  b8 = [a4;b4];
+				  save Function2a.txt b8 -ASCII;
+                  b9 = [y4;q4];
+                  save FunctionAct2a.txt b9 -ASCII;
+                  
+        case 9
+            file = 'Function4a';
+                  x = rand(train_size,1);
+                  p = rand(test_size,1);
+                  noise = (-0.2 + 0.4 * rand(train_size,1) );
+                  x1=0+x*100;
+                  x2=40*pi+x*520*pi;
+                  x3=0+x*1;
+                  x4=1+x*10;
+                  y=atan((x2.*x3-(1./(x2.*x4)))./x1);
+                  y=y+noise;
+                  a=[x1,x2,x3,x4,y];
+                  save Function4atrain.txt a -ASCII;
+                  p1=0+p*100;
+                  p2=40*pi+p*520*pi;
+                  p3=0+p*1;
+                  p4=1+p*10;
+                  b=atan((p2.*p3-(1./(p2.*p4)))./p1);
+                  q=[p1,p2,p3,p4,b];
+                  save Function4atest.txt q -ASCII;
+                  b1 = [a;q];
+                  save Function4a.txt b1 -ASCII;
+                  b2= [y;b];
+                  save FunctionAct4a.txt b2 -ASCII;
+                  
+        case 10
+           file = 'Function11a';
+                  x = rand(train_size,1);
+                  p = rand(test_size,1);
+                  noise = (-0.2 + 0.4 * rand(train_size,1) );      
+                  x1 = x*8*pi-4*pi;
+                  x2=x1;
+                  y2=sin(sqrt(x1.*x1+x2.*x2))./sqrt(x1.*x1+x2.*x2);
+                  y2=y2+noise;
+                  a=[x1,x2,y2];
+                  save Function11atrain.txt a -ASCII;
+                  p1 = p*8*pi-4*pi;
+                  p2=p1;
+                  b=sin(sqrt(p1.*p1+p2.*p2))./sqrt(p1.*p1+p2.*p2);
+                  q=[p1,p2,b];
+                  save Function11atest.txt q -ASCII;
+                  b1 = [a;q];
+                  save Function11a.txt b1 -ASCII;
+                  b2= [y2;b];
+                  save FunctionAct11a.txt b2 -ASCII;
+                  
+        case 11
+           file = 'Function13';
+                  x = rand(train_size,1);
+                  p = rand(test_size,1);
+                  noise = normrnd(0,0.2,train_size,1);      
+                  x1 = 0+x*6;
+                  y1 = sin(x1).*cos(x1.*x1);
+                  y1 = y1 + noise;
+                  a1 = [x1,y1];
+                  save Function13train.txt a1 -ASCII;                  
+                  p1 = 0+p*6;
+                  q1 = sin(p1).*cos(p1.*p1);
+                  b1 = [p1,q1];
+                  save Function13test.txt b1 -ASCII;
+				  b = [a1;b1];
+				  save Function13.txt b -ASCII;
+                  b2 = [y1;q1];
+                  save FunctionAct13.txt b2 -ASCII;
+    end
+end

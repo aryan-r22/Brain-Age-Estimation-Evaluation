@@ -1,0 +1,15 @@
+File Name:../dataset/Function6_train.txt;  example no:24; RMSE = 0.0508326, optimum_c1:1	optimum_c2:1 optimum_mu:1, time  0.34375
+File Name:../dataset/Function6a_train.txt;  example no:25; RMSE = 0.0855091, optimum_c1:1e-005	optimum_c2:1e-005 optimum_mu:1, time 0.296875
+File Name:../dataset/Function7_train.txt;  example no:27; RMSE = 0.0483471, optimum_c1:1	optimum_c2:1 optimum_mu:1, time   0.3125
+File Name:../dataset/Function8_train.txt;  example no:29; RMSE = 0.0307709, optimum_c1:1	optimum_c2:1 optimum_mu:1, time     0.25
+File Name:../dataset/Function8a_train.txt;  example no:30; RMSE = 0.0133346, optimum_c1:1	optimum_c2:1 optimum_mu:1, time 0.234375
+File Name:../dataset/Function9_train.txt;  example no:31; RMSE = 0.0396926, optimum_c1:1e-005	optimum_c2:1e-005 optimum_mu:0.25, time 0.296875
+File Name:../dataset/Function9a_train.txt;  example no:32; RMSE = 0.0349008, optimum_c1:1	optimum_c2:1 optimum_mu:0.125, time 0.203125
+File Name:../dataset/Function10a_train.txt;  example no:33; RMSE = 0.0455217, optimum_c1:1	optimum_c2:1 optimum_mu:0.5, time   0.1875
+File Name:../dataset/Function10_train.txt;  example no:34; RMSE = 0.0527068, optimum_c1:1	optimum_c2:1 optimum_mu:1, time  0.21875
+File Name:../dataset/Function11_train.txt;  example no:35; RMSE = 0.00859375, optimum_c1:0.01	optimum_c2:0.01 optimum_mu:4, time  8.21875
+File Name:../dataset/Function11a_train.txt;  example no:36; RMSE = 0.0400208, optimum_c1:1	optimum_c2:1 optimum_mu:4, time  0.34375
+File Name:../dataset/multi_train.txt;  example no:37; RMSE = 0.0136281, optimum_c1:1	optimum_c2:1 optimum_mu:2, time 0.296875
+File Name:../dataset/Function2a_train.txt;  example no:38; RMSE = 0.0160501, optimum_c1:1	optimum_c2:1 optimum_mu:2, time     0.25
+File Name:../dataset/friedman3_train.txt;  example no:39; RMSE = 0.0962321, optimum_c1:1e-005	optimum_c2:1e-005 optimum_mu:512, time 0.234375
+File Name:../dataset/Function4a_train.txt;  example no:40; RMSE = 0.0221275, optimum_c1:10	optimum_c2:10 optimum_mu:512, time    0.625

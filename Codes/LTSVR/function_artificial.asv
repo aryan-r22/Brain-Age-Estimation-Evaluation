@@ -1,0 +1,85 @@
+% Function:Artificial datasets
+% % 3-d Mexican hat
+%  x1=(-4*pi:8*pi/199:4*pi)';    %uniformly choosing 200 points between -4*pi to 4*pi
+% x2=x1;
+% [X,Y]=meshgrid(x1,x2);
+% z=(sin(sqrt(X.*X+Y.*Y)))./((sqrt(X.*X+Y.*Y)));
+% mesh(X,Y,z)
+% [X] = matrix2Array(X)
+% [Y] = matrix2Array(Y)
+% [Z] = matrix2Array(z)
+% Mexican_Data=[ matrix2Array(X) matrix2Array(Y) matrix2Array(Z)]
+
+
+%Friedman1
+x1=0+(1-0).*rand(200,1);
+x1=sort(x1);
+x2=x1;
+x3=x1;
+x4=x1;
+x5=x1;
+z=10.*sin(pi.*x1.*x2)+20.*(x3-0.5).*(x3-0.5)+ (10.*x4)+(5.*x5);
+z1=z+normrnd(0,0.2,200,1);
+xx1=0+(1-0).*rand(500,1);
+xx1=sort(xx1);
+xx2=xx1;
+xx3=xx1;
+xx4=xx1;
+xx5=xx1;
+z2=10.*sin(pi.*xx1.*xx2)+20.*(xx3-0.5).*(xx3-0.5)+ (10.*xx4)+(5.*xx5);
+
+%Multi
+x1=0+(1-0).*rand(200,1);
+x1=sort(x1);
+x2=x1;
+x3=x1;
+x4=x1;
+x5=x1;
+z1=0.79+ 1.27.*x1.*x2+ 1.56.*x1.*x4+ 3.42.*x2.*x5 +2.06.*x3.*x4.*x5;
+xx1=0+(1-0).*rand(1000,1);
+xx1=sort(xx1);
+xx2=xx1;
+xx3=xx1;
+xx4=xx1;
+xx5=xx1;
+z2=0.79+ 1.27.*xx1.*xx2+ 1.56.*xx1.*xx4+ 3.42.*xx2.*xx5 +2.06.*xx3.*xx4.*xx5;
+
+%Friedman3
+x1=0+(100-0).*rand(200,1);
+x1=sort(x1);
+x2=40.*pi+(560.*pi-40.*pi).*rand(200,1);
+x2=sort(x2);
+x3=0+(1-0).*rand(200,1);
+x3=sort(x3);
+x4=1+(11-1).*rand(200,1);
+x4=sort(x4);
+z=atan((x2.*x3-(1./(x2.*x4)))./x1);
+xx1=0+(100-0).*rand(1000,1);
+xx1=sort(xx1);
+xx2=40.*pi+(560.*pi-40.*pi).*rand(1000,1);
+xx2=sort(xx2);
+xx3=0+(1-0).*rand(1000,1);
+xx3=sort(xx3);
+xx4=1+(11-1).*rand(1000,1);
+xx4=sort(xx4);
+z2=atan((xx2.*xx3-(1./(xx2.*xx4)))./xx1);
+
+
+%new1
+x1=-1+2.*rand(200,1);
+x1=sort(x1);
+x2=-1+2.*rand(200,1);
+x2=sort(x2);
+z=1.9.*(1.35+exp(x1).*sin(13.*(x1-0.6).*(x1-0.6)) +exp(3.*(x2-0.5)).*sin(4*pi.*(x2-0.9).*(x2-0.9)));
+z1=z+normrnd(0,0.2,200,1);
+xx1=-1+2.*rand(500,1);
+xx1=sort(xx1);
+xx2=-1+2.*rand(500,1);
+xx2=sort(xx2);
+z2=1.9.*(1.35+exp(xx1).*sin(13.*(xx1-0.6).*(xx1-0.6)) +exp(3.*(xx2-0.5)).*sin(4*pi.*(xx2-0.9).*(xx2-0.9)));
+
+ z=1.9.*(1.35+exp(x1).*sin(13.*(x1-0.6).*(x1-0.6)) +exp(3.*(x2-0.5)).*sin(4*pi.*(x2-0.9).*(x2-0.9)));
+ 
+ 
+ 
+ 
