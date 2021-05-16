@@ -26,7 +26,7 @@ A collection of different regression models for predicting Brain Age from T1 wei
 22. Lagrangian Twin Support Vector Regression(LTSVR)
 
 ## Analysing the codes  
-The ideal set of parameters can be found using `Grid_Searcher.m` (wherever applicable), and the final results can be inferenced from 'Main_Code.m`.  
+The ideal set of parameters can be found using `Grid_Searcher.m` (wherever applicable), and the final results can be inferenced from `Main_Code.m`.  
 
 ## Acknowledgements
 
