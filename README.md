@@ -1,6 +1,15 @@
 # Brain-Age-Estimation
 A collection of different regression models for predicting Brain Age from T1 weighted MRI Images. To be used as a reference to the paper: **Predicting brain age using machine learning algorithms: A comprehensive evaluation (IEEE JBHI-EMBS)** [*Accepted*]
 
+## Authors
+**Iman Beheshti**: Department of Human Anatomy and Cell Science, Rady Faculty of Health Sciences, Max Rady College of Medicine,
+University of Manitoba, Winnipeg, MB, Canada   
+**M. Tanveer**: Department of Mathematics, Indian Institute of Technology Indore, India  
+**Imran Razzak**: School of Information Technology, Deakin University, Geelong, Australia   
+**M.A. Ganaie**: Department of Mathematics, Indian Institute of Technology Indore, India   
+**Aryan Rastogi**: Undergraduate Student, Department of Electrical Engineering, Indian Institute of Technology Indore, India  
+**Vardhan Paliwal**: Undergraduate Student, Department of Electrical Engineering, Indian Institute of Technology Indore, India  
+
 ## Regression Techniques evaluated:
 1. Bagged Ensemble Trees
 2. Binary Decision Tree
