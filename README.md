@@ -25,6 +25,9 @@ A collection of different regression models for predicting Brain Age from T1 wei
 21. Regularized K-Nearest Neighbor based Weighted Twin Support Vector Regression(RKNNWTSVR)  
 22. Lagrangian Twin Support Vector Regression(LTSVR)
 
+## Analysing the codes  
+The ideal set of parameters can be found using `Grid_Searcher.m` (wherever applicable), and the final results can be inferenced from 'Main_Code.m`.  
+
 ## Acknowledgements
 
 The codes have been written in MATLAB&reg;. We would like to express our gratitude to the respective authors for using their works. 
