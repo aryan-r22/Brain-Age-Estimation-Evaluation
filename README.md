@@ -10,7 +10,7 @@ University of Manitoba, Winnipeg, MB, Canada
 **Aryan Rastogi**: Undergraduate Student, Department of Electrical Engineering, Indian Institute of Technology Indore, India  
 **Vardhan Paliwal**: Undergraduate Student, Department of Electrical Engineering, Indian Institute of Technology Indore, India  
 
-## Regression Techniques evaluated:
+## Regression Algorithms evaluated:
 1. Bagged Ensemble Trees
 2. Binary Decision Tree
 3. Fast Decorrelated Neural Network Ensembles(DNNE)
