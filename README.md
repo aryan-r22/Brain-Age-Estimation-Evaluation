@@ -1,5 +1,5 @@
 # Brain-Age-Estimation
-A collection of different regression models for predicting Brain Age from T1 weighted MRI Images. To be used as a reference to the paper: **Predicting brain age using machine learning algorithms: A comprehensive evaluation (JBHI-EMBS)** [*Accepted*]
+A collection of different regression models for predicting Brain Age from T1 weighted MRI Images. To be used as a reference to the paper: **Predicting brain age using machine learning algorithms: A comprehensive evaluation (IEEE JBHI-EMBS)** [*Accepted*]
 
 ## Regression Techniques evaluated:
 1. Bagged Ensemble Trees
