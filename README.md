@@ -1,5 +1,7 @@
 # Brain-Age-Estimation
-A collection of different regression models for predicting Brain Age from T1 weighted MRI Images. To be used as a reference to the paper: **Predicting brain age using machine learning algorithms: A comprehensive evaluation (IEEE JBHI-EMBS)** [*Accepted*]
+A collection of different regression models for predicting Brain Age from T1 weighted MRI Images. To be used as a reference to the paper: **Predicting brain age using machine learning algorithms: A comprehensive evaluation (IEEE JBHI-EMBS)** [*Accepted*]. 
+
+If you intend to use this work, kindly cite as given below.
 
 ## Authors
 **Iman Beheshti**: Department of Human Anatomy and Cell Science, Rady Faculty of Health Sciences, Max Rady College of Medicine,
@@ -34,10 +36,11 @@ University of Manitoba, Winnipeg, MB, Canada
 21. Regularized K-Nearest Neighbor based Weighted Twin Support Vector Regression(RKNNWTSVR)  
 22. Lagrangian Twin Support Vector Regression(LTSVR)
 
-## Analysing the codes  
+## Running the codes  
 The ideal set of parameters can be found using `Grid_Searcher.m` (wherever applicable), and the final results can be inferenced from `Main_Code.m`.  
 
 ## Acknowledgements
+The codes have been written in MATLAB&reg and tested on versions R2020b and above. We would like to express our gratitude to the respective authors for using their works. 
 
-The codes have been written in MATLAB&reg;. We would like to express our gratitude to the respective authors for using their works. 
-
+## Cite as  
+Awaited
