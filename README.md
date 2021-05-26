@@ -39,7 +39,7 @@ The ideal set of parameters can be found using `Grid_Searcher.m` (wherever appli
 
 ## Citation  
 If you intend to use this work, kindly cite us as follows:  
-``
+
 @ARTICLE{9439893,  
   author={Beheshti, Iman and Ganaie, M.A. and Paliwal, Vardhan and Rastogi, Aryan and Razzak, Imran and Tanveer, M.},  
   journal={IEEE Journal of Biomedical and Health Informatics},   
@@ -49,7 +49,7 @@ If you intend to use this work, kindly cite us as follows:
   number={},  
   pages={1-1},  
   doi={10.1109/JBHI.2021.3083187}}  
-  ``  
+  
 
 ## Acknowledgements
 The codes have been written in MATLAB&reg and tested on versions R2020b and above. We would like to express our gratitude to the respective authors for using their works. 
