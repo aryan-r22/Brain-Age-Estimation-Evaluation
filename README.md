@@ -1,5 +1,5 @@
 # Brain-Age-Estimation
-A collection of different regression models for predicting Brain Age from T1 weighted MRI Images. To be used as a reference to the paper: **Predicting brain age using machine learning algorithms: A comprehensive evaluation (IEEE JBHI-EMBS)** [*Accepted*]. 
+A collection of different regression models for predicting Brain Age from T1 weighted MRI Images. To be used as a reference to the paper: **Predicting brain age using machine learning algorithms: A comprehensive evaluation (IEEE JBHI-EMBS)** `https://doi.org/10.1109/JBHI.2021.3083187 `.  
 
 ## Authors
 **Iman Beheshti**: Department of Human Anatomy and Cell Science, Rady Faculty of Health Sciences, Max Rady College of Medicine,
@@ -36,6 +36,20 @@ University of Manitoba, Winnipeg, MB, Canada
 
 ## Running the codes  
 The ideal set of parameters can be found using `Grid_Searcher.m` (wherever applicable), and the final results can be inferenced from `Main_Code.m`.  
+
+## Citation  
+If you intend to use this work, kindly cite us as follows:  
+``
+@ARTICLE{9439893,  
+  author={Beheshti, Iman and Ganaie, M.A. and Paliwal, Vardhan and Rastogi, Aryan and Razzak, Imran and Tanveer, M.},  
+  journal={IEEE Journal of Biomedical and Health Informatics},   
+  title={Predicting brain age using machine learning algorithms: A comprehensive evaluation},   
+  year={2021},  
+  volume={},  
+  number={},  
+  pages={1-1},  
+  doi={10.1109/JBHI.2021.3083187}}  
+  ``  
 
 ## Acknowledgements
 The codes have been written in MATLAB&reg and tested on versions R2020b and above. We would like to express our gratitude to the respective authors for using their works. 
