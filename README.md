@@ -52,6 +52,6 @@ If you intend to use this work, kindly cite us as follows:
   
 
 ## Acknowledgements
-The codes have been written in MATLAB&reg and tested on versions R2020b and above. We would like to express our gratitude to the respective authors for using their works. 
+The codes have been written in MATLAB&reg; and tested on versions R2020b and above. We would like to express our gratitude to the respective authors for using their works. 
 
 
